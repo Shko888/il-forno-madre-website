@@ -1,0 +1,34 @@
+# Regole permanenti — Il Forno Madre Website
+
+## Identità visiva — NON modificare
+
+- NON modificare la palette colori. I token CSS in `:root` (--paper, --ink, --terracotta, --copper, --olive, --cream, --flour, --muted, --charcoal) sono definitivi.
+- NON cambiare i font. Cormorant Garamond (heading) e Inter (body) sono parte dell'identità. Nessun font aggiuntivo.
+- NON aggiungere elementi decorativi inutili: icone superflue, pattern, texture, illustrazioni non richieste.
+- Molto spazio bianco — non riempire tutto. I padding generosi sono una scelta progettuale, non un errore.
+
+## Animazioni — NON toccare
+
+- NON modificare le animazioni hover sulle card prodotti (`.product-large::after`, `.product-stack-item::after`). Il `transform: scale(1.045)` con `transition: 1s ease` è calibrato.
+- NON aggiungere altre animazioni senza approvazione esplicita.
+
+## Tono editoriale
+
+- Mantenere il registro poetico ed essenziale. Frasi brevi, nessun superlativo.
+- I testi non vanno modificati senza revisione del brand.
+
+## CSS
+
+- Usare sempre i token CSS definiti in `:root`. No colori o valori hardcoded al di fuori di `:root`.
+- Ogni modifica CSS deve essere testata su viewport 375px (iPhone SE) prima di considerarsi completata.
+- Rispettare la gerarchia tipografica: `h1 → h2 → h3 → .lead → p → .eyebrow`.
+
+## Struttura
+
+- Il progetto è HTML/CSS vanilla. NON introdurre framework CSS (Tailwind, Bootstrap), JavaScript framework, o build tool senza una decisione esplicita.
+- Preferire `index.html` come file unico fino a quando il progetto non richiede pagine aggiuntive.
+
+## Immagini
+
+- Le immagini Unsplash sono placeholder. NON ottimizzarle — verranno sostituite con foto reali.
+- Quando si aggiungono immagini reali: formato WebP, max 200KB, sempre con attributo `alt` descrittivo.
